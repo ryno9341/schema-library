@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "CSS Lint Configuration Schema",
+  "title": "CSS Lint Configuration",
   "type": "object",
   "properties": {
     "adjoining-classes": {
