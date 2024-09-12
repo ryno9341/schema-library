@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CSS Lint Configuration Schema",
+  "type": "object",
+  "properties": {
+    "adjoining-classes": {
+      "description": "Checks whether multiple class selectors are used together in a way that could be simplified or consolidated. Setting this to true will trigger warnings about such usage.",
+      "type": "boolean"
+    },
+    "box-model": {
+      "description": "Ensures that all elements use the box model consistently. When enabled, it will warn if different box models are applied inconsistently, helping to avoid layout issues.",
+      "type": "boolean"
+    },
+    "box-sizing": {
+      "description": "Checks if the box-sizing property is used correctly and consistently across your stylesheets. This helps to ensure that element dimensions and layouts are calculated as expected.",
+      "type": "boolean"
+    },
+    "bulletproof-font-face": {
+      "description": "Verifies that @font-face declarations are cross-browser compatible and include all necessary fallback fonts and formats. This rule helps in ensuring that custom fonts are displayed correctly across different browsers.",
+      "type": "boolean"
+    },
+    "compatible-vendor-prefixes": {
+      "description": "Checks for the correct use of vendor prefixes for CSS properties to ensure compatibility with various browsers. This helps prevent issues with properties that may require prefixes for cross-browser support.",
+      "type": "boolean"
+    },
+    "display-property-grouping": {
+      "description": "Ensures that CSS properties related to display are grouped together logically. This makes stylesheets more readable and maintains a consistent structure in your CSS.",
+      "type": "boolean"
+    },
+    "duplicate-background-images": {
+      "description": "Detects duplicate background images within CSS rules. This can help optimize stylesheets by avoiding redundant image declarations, improving performance and reducing file size.",
+      "type": "boolean"
+    },
+    "duplicate-properties": {
+      "description": "Finds duplicate properties within CSS rules. This helps in cleaning up and optimizing stylesheets by removing redundant declarations and avoiding conflicts.",
+      "type": "boolean"
+    },
+    "empty-rules": {
+      "description": "Identifies CSS rules that have no properties. Empty rules are often unnecessary and can be removed to keep your stylesheet clean and efficient.",
+      "type": "boolean"
+    },
+    "fallback-colors": {
+      "description": "Checks for the use of fallback colors in properties that support multiple color formats. This ensures that users with different browser capabilities still get a reasonable color experience.",
+      "type": "boolean"
+    },
+    "floats": {
+      "description": "Ensures that the float properties are used properly and consistently. This helps to avoid layout issues and ensure that floating elements behave as expected.",
+      "type": "boolean"
+    },
+    "font-faces": {
+      "description": "Validates the use of @font-face declarations to ensure that custom fonts are defined correctly and are available for use in stylesheets.",
+      "type": "boolean"
+    },
+    "font-sizes": {
+      "description": "Checks for consistent use of font sizes throughout the stylesheet. Consistency in font sizes helps maintain a uniform appearance and readability across the site.",
+      "type": "boolean"
+    },
+    "gradients": {
+      "description": "Ensures that CSS gradients are used correctly. This includes checking for proper syntax and cross-browser compatibility to make sure gradients render as intended.",
+      "type": "boolean"
+    },
+    "ids": {
+      "description": "Validates the use of ID selectors in CSS. This rule helps avoid potential issues with ID specificity and can promote better use of class selectors.",
+      "type": "boolean"
+    },
+    "import": {
+      "description": "Checks the use of @import rules in CSS. While @import is useful, excessive or incorrect use can impact performance, so this rule helps ensure best practices are followed.",
+      "type": "boolean"
+    },
+    "important": {
+      "description": "Identifies the use of !important in CSS rules. Overuse of !important can lead to specificity issues and make debugging harder, so this rule helps manage its usage.",
+      "type": "boolean"
+    },
+    "known-properties": {
+      "description": "Ensures that only valid, known CSS properties are used in the stylesheet. This helps prevent errors from typos or non-standard properties that might not be recognized by browsers.",
+      "type": "boolean"
+    },
+    "outline-none": {
+      "description": "Checks the use of outline: none in CSS. While useful for removing outlines from elements, it’s important to ensure that it’s used appropriately to maintain accessibility.",
+      "type": "boolean"
+    },
+    "overqualified-elements": {
+      "description": "Detects selectors that are unnecessarily complex or overly qualified (e.g., div#id.class). Simplifying selectors can improve performance and maintainability.",
+      "type": "boolean"
+    },
+    "qualified-headings": {
+      "description": "Validates the use of heading elements (h1, h2, etc.) with additional classes or IDs. This ensures that headings are used appropriately and consistently within the document structure.",
+      "type": "boolean"
+    },
+    "regex-selectors": {
+      "description": "Checks for the use of regular expression selectors. While not a standard feature of CSS, some tools and preprocessors might use them, and this rule helps manage such usage.",
+      "type": "boolean"
+    },
+    "shorthand": {
+      "description": "Ensures that shorthand properties are used correctly in CSS. This helps to simplify stylesheets and avoid potential issues with longhand properties.",
+      "type": "boolean"
+    },
+    "star-property-hack": {
+      "description": "Identifies the use of the star property hack to handle CSS compatibility issues with older versions of Internet Explorer. While less common today, this rule helps manage legacy hacks.",
+      "type": "boolean"
+    },
+    "text-indent": {
+      "description": "Checks the use of the text-indent property. Ensures that text indentation is applied appropriately and consistently within the stylesheet.",
+      "type": "boolean"
+    },
+    "underscore-property-hack": {
+      "description": "Detects the use of the underscore property hack for CSS compatibility with older versions of Internet Explorer. Helps manage legacy hacks and their usage.",
+      "type": "boolean"
+    },
+    "unique-headings": {
+      "description": "Ensures that headings in the document are unique. This prevents multiple elements from having the same heading and helps maintain a clear and logical document structure.",
+      "type": "boolean"
+    },
+    "universal-selector": {
+      "description": "Validates the use of the universal selector (*) in CSS. While useful in some cases, excessive use can impact performance and specificity, so this rule helps manage its usage.",
+      "type": "boolean"
+    },
+    "unqualified-attributes": {
+      "description": "Checks for unqualified attribute selectors in CSS. Using unqualified attribute selectors can lead to unexpected results, and this rule helps ensure they are used correctly.",
+      "type": "boolean"
+    },
+    "vendor-prefix": {
+      "description": "Ensures that vendor prefixes are used correctly for CSS properties to maintain cross-browser compatibility. Helps manage the use of prefixes for properties requiring them.",
+      "type": "boolean"
+    },
+    "zero-units": {
+      "description": "Detects the use of units (like px) with zero values (e.g., 0px instead of 0). Removing units for zero values can simplify the CSS and improve performance.",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
