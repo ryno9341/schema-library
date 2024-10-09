@@ -8,3 +8,4 @@ This repository contains various JSON schemas for different use cases.
 ## Current Schemas
 
 - [csslintrc.json](./schemas/csslintrc.json)
+- [csscomb.json](./schemas/csscomb.json)

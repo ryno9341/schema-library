@@ -5,6 +5,9 @@
   "properties": {
     "csslintrc": {
       "$ref": "./schemas/csslintrc.json"
+    },
+    "csscomb": {
+      "$ref": "./schemas/csslintrc.json"
     }
   },
   "additionalProperties": false
